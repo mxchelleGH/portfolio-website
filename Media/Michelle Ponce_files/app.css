@@ -1,0 +1,171 @@
+/*Site-wide styles*/
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Rubik", sans-serif;
+}
+
+body.dark {
+    background-color: #401a66 ;
+}
+
+/*Section formatting*/
+section {
+    scroll-margin-top: 100px;
+}
+
+/*Background (also includes navigation bar)*/
+.background {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(#29054e 6%, rgb(255, 255, 255));
+    background-size: cover;
+    justify-content: center;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+.background.dark {
+     background: linear-gradient(#1a0b2e 0%, #0f0516 100%);
+
+/*Navigation -> basically element that holds navigation links*/
+#navContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    padding: padding 2% 6%;
+    justify-self: space-between;
+    align-items: center;
+    background-color: #29054e;
+}
+
+#navContainer.dark {
+    background-color: #14071b ;
+}
+
+/*Images in nav bar*/
+nav #navSun{
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
+/*Navigation bar*/
+.navBar {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*Navigation Links*/
+.navBar ul li {
+    list-style:none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/*The hyperlink aspect of each item*/
+.navBar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hover over hyperlink */
+.navBar ul li a:hover {
+  color: #bc74ff; /* Optional: change color to enhance the "active" feel */
+}
+
+/*Home Page*/
+#homePage {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    background-color: #fff;
+    min-width: 500px;
+    width: 30%;
+    height: 350px;
+    box-shadow: #29054e 0px 5px 15px;
+    scroll-margin-top: 150px;
+}
+
+#homePage.dark {
+    background-color: #21083a ;
+    color: #fff;
+    box-shadow: #d0bde3 0px 5px 15px;
+}
+
+/*Home page title*/
+#homePage h1 {
+    font-size: 100px;
+    color: #5703aa
+}
+
+#homePage h1.dark {
+    color: #ae57fa ;
+}
+
+#homePage h2 {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+/* Homepage description*/
+#homePage p {
+    color: #000000;
+}
+#homePage p.dark {
+    color: #ffffff;
+}
+
+#homeLocation {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#homeJob {
+    font-size: 20px;
+}
+
+/*Homepage divider*/
+#homePageLine {
+  justify-self: center;
+  border: none;
+  border-top: 5px solid #29054e ; 
+  margin-bottom: 20px;
+  width: 90%; /* Control the width of the line */
+}
+#homePageLine.dark {
+  border-color: #eedbff;
+}
+
+/*Sections Header 1*/
+.sectionHead1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #29054e ;
+}
+
+/*Resume Section*/
+
+/*Resume PDF viewer*/
+iframe {
+    justify-self: center;
+
+    width: 40%;       /* Spans the full width of the container */
+    height: 100vh;      /* Makes the PDF exactly as tall as the screen */
+    border: none;       /* Removes the ugly default border */
+    display: block;     /* Removes any weird bottom spacing */
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Michelle's Portfolio</title>
+    <script src="Logic/app.js"></script>
+    <link rel="stylesheet" href="Styles/information.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Media/tabIcon.png">
+</head>
+<body>
+    <nav id="navContainer">
+        <!-- Home button -->
+        <a href="#" id="homeButton">
+            <img src="Media/home.png" alt="Go to Home" id="homeIcon">
+        </a>
+        <!-- Color Mode -->
+        <!-- <img id="navSun" onclick="onColorModeChanged()" src="Media/sun.png"> -->
+        <div class="navBar">
+            <ul>
+                <li><a href="#aboutMeSection">About</a></li>
+                <li><a href="#experienceSection">Experience</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="#projectsSection">Projects</a></li>
+                <li><a href="#resumeSection">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="background">
+        <div id="homePage">
+            <div id="homePagContainer">
+                <div id="homeText">
+                    <h2> Hi, I'm </h2>
+                    <h1> Michelle!</h1>
+                    <div id="homePageDescription">
+                        <p id="homeJob"> B.S in Computer Science | Georgia Tech </p>
+                        <p id="homeLocation"> Atlanta, GA </p>
+                    </div>
+                </div>
+                <div id="buttonContainer">
+                    <a href="https://www.linkedin.com/in/michelleponceli/" id="linkedInButton" class="linkContainer">
+                        <img src="Media/linkedin.png" alt="Go to LinkedIn" id="linkedInIcon" class="linkButtons">
+                    </a>
+                    <a href="mailto:michelleponcewe@gmail.com?subject=Portfolio%20Submission:" id="emailButton" class="linkContainer">
+                        <img src="Media/email.png" alt="Go to Email" id="emailIcon" class="linkButtons">
+                    </a>
+                    <a href="https://github.com/mxchelleGH" id="githubButton" class="linkContainer">
+                        <img src="Media/github.png" alt="Go to GitHub" id="githubIcon" class="linkButtons">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About me -->
+    <section id="aboutMeSection" class="portfolioSection gradientBG">
+        <h1 class="sectionHead1"> About Me</h1>
+        <div id="aboutMeContainer">
+            <!-- <div id="aboutMePhotoTempHold">
+                <img id="aboutMePhoto" src="Media/ProfilePic.jpg" alt="Profile Picture">
+            </div> -->
+            <!-- <hr id="aboutMeLine"> -->
+            <p id="aboutMeBio">
+                I am a graduating 4th year Computer Science student at Georgia Tech, with my concentrations in Peopla and Media.
+                I've always been motivated by the intertwining of technology, creativity, and human interaction, finding joy in the full software engineering experience through these various 
+            </p>
+        </div>
+    </section>
+    <!-- Experience -->
+    <section id="experienceSection" class="portfolioSection secondarySection">
+        <h1 class="sectionHead1"> Professional Experience</h1>
+        <div id="experienceContainer">
+            <div id="2025Summer" class="expEntry">
+                <img src="Media/Microsoft.png" alt="Microsoft Logo" class="expLogo">
+                <div class="jobContainer">
+                    <h2 class="expJobTitle">Software Engineer Intern</h2>
+                    <h3 class ="expJobLocation"> Microsoft</h3>
+                    <h3 class ="expJobDetail">May 2025 - August 2025</h3>
+                </div>
+                <div class="jobDescription">
+                    <ul>
+                        <li>Integrated a deduplication workflow utilizing Azure AI Search, identifying duplicate repair items in backlog for
+                        improved efficiency in risk management.</li>
+                        <li>Built a batch uploading pipeline for backlog items into Azure AI Search from Kusto Database, using vector
+                        embeddings and Open AI powered summarization to enable semantic search across large amounts of items.</li>
+                        <li>Designed a CLI tool that demonstrated the full deduplication logic, including semantic similarity scoring and JSON
+                        formatting for future workflow integration.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="2024Summer" class="expEntry">
+                <img src=" Media/amazon.jpeg" alt="Amazon Logo" class="expLogo">
+                <div class="jobContainer">
+                    <h2 class="expJobTitle">Software Engineer Intern</h2>
+                    <h3 class ="expJobLocation"> Amazon</h3>
+                    <h3 class ="expJobDetail"> May 2024 - August 2024</h3>
+                </div>
+                <div class="jobDescription">
+                    <ul>
+                        <li>Developed a dynamic configuration management system using AWS AppConfig with hosted configuration storage.</li>
+                        <li>Created a JSON configuration schema validator, migrated existing in-package configurations to the hosted storage,
+                        and built custom deserialization for integration with Kotlin data classes.</li>
+                        <li>Built a front-end interface to enable clients accessibility to their product configurations without service package
+                        interaction.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="2023Summer" class="expEntry">
+                <img src="Media/amazon.jpeg" alt="Amazon Logo" class="expLogo">
+                <div class="jobContainer">
+                    <h2 class="expJobTitle">AFE Software Engineer Intern</h2>
+                    <h3 class ="expJobLocation"> Amazon</h3>
+                    <h3 class ="expJobDetail"> May 2023 - August 2023</h3>
+                </div>
+                 <div class="jobDescription">
+                    <ul>
+                        <li>Implemented new input fields and visibility dashboards to monitor 15 external FoodVoucherCard partner
+                        availability metrics and potential partner outages for Amazon Mexico.</li>
+                        <li>Improved three teams' efficiency in handling availability drops per provider, cutting down an hour-long, manual
+                        process to seconds through automation.</li>
+                        <li>Established heavy unit testing using JUnit and Mockito to ensure effective code in various edge case scenarios.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skillsSection" class="portfolioSection gradientBG">
+        <h1 class="sectionHead1"> Skills</h1>
+        <h3>Languages & Frameworks</h3>
+        <div id="languagesFrameworksSkills" class="skillsContainer">
+            <div id="javaSkill" class="skillEntry">
+                <img src="Media/Skills/java.png" alt="Java Skill" id="javaIcon" class="skillIcon">
+                <p class="skillText">Java</p>
+            </div>
+            <div id="kotlinSkill" class="skillEntry">
+                <img src="Media/Skills/kotlin.png" alt="Kotlin Skill" id="kotlinIcon" class="skillIcon">
+                <p class="skillText">Kotlin</p>
+            </div>
+            <div id="csharpSkill" class="skillEntry">
+                <img src="Media/Skills/csharp.png" alt="Csharp Skill" id="csharpIcon" class="skillIcon">
+                <p class="skillText">C#</p>
+            </div>
+            <div id="dotnetSkill" class="skillEntry">
+                <img src="Media/Skills/netFramework.jpg" alt="dotNet Skill" id="dotNetIcon" class="skillIcon">
+                <p class="skillText">.Net</p>
+            </div>
+            <div id="javascriptSkill" class="skillEntry">
+                <img src="Media/Skills/javascript.png" alt="JavaScript Skill" id="javascriptIcon" class="skillIcon">
+                <p class="skillText">JavaScript</p>
+            </div>
+            <div id="typescriptSkill" class="skillEntry">
+                <img src="Media/Skills/typescript.png" alt="TypeScript Skill" id="typescriptIcon" class="skillIcon">
+                <p class="skillText">TypeScript</p>
+            </div>  
+            <div id="htmlSkill" class="skillEntry">
+                <img src="Media/Skills/html.png" alt="HTML Skill" id="htmlIcon" class="skillIcon">
+                <p class="skillText">HTML</p>
+            </div>
+            <div id="cssSkill" class="skillEntry">
+                <img src="Media/Skills/css.png" alt="CSS Skill" id="cssIcon" class="skillIcon">
+                <p class="skillText">CSS</p>
+            </div>
+            <div id="pythonSkill" class="skillEntry">
+                <img src="Media/Skills/python.png" alt="Python Skill" id="pythonIcon" class="skillIcon">
+                <p class="skillText">Python</p>
+            </div>
+            <div id="KQLSkill" class="skillEntry">
+                <img src="Media/Skills/KQL.png" alt="KQL Skill" id="KQLIcon" class="skillIcon">
+                <p class="skillText">KQL</p>
+            </div>
+        </div>
+        <h3>Platforms & Tools</h3>
+        <div id="platformSkills" class="skillsContainer">
+            <div id="azureSkill" class="skillEntry">
+                <img src="Media/Skills/azure.jpg" alt="Azure Skill" id="azureIcon" class="skillIcon">
+                <p class="skillText">Azure</p>
+            </div>
+            <div id="awsSkill" class="skillEntry">
+                <img src="Media/Skills/aws.webp" alt="AWS Skill" id="awsIcon" class="skillIcon">
+                <p class="skillText">AWS</p>
+            </div>
+            <div id="gitSkill" class="skillEntry">
+                <img src="Media/Skills/git.png" alt="Git skill" id="gitIcon" class="skillIcon">
+                <p class="skillText">GIT/Github</p>
+            </div>
+            <div id="dockerSkill" class="skillEntry">
+                <img src="Media/Skills/docker.png" alt="Docker skill" id="dockerIcon" class="skillIcon">
+                <p class="skillText">Docker</p>
+            </div>
+            <div id="firebaseSkill" class="skillEntry">
+                <img src="Media/Skills/firebase.png" alt="Firebase skill" id="firebaseIcon" class="skillIcon">
+                <p class="skillText">Firebase</p>
+            </div>
+             <div id="unitySkill" class="skillEntry">
+                <img src="Media/Skills/unity.png" alt="Unity skill" id="unityIcon" class="skillIcon">
+                <p class="skillText">Unity</p>
+            </div>
+            <div id="figmaSkill" class="skillEntry">
+                <img src="Media/Skills/figma.svg" alt="Figma skill" id="figmaIcon" class="skillIcon">
+                <p class="skillText">Figma</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projectsSection" class="portfolioSection secondarySection">
+        <h1 class="sectionHead1"> Projects</h1>
+        <div id="projectContainer">
+            <div id="2340Project" class="projectEntry">
+                
+            </div>
+            <div id="singsignProject" class="projectEntry">
+
+            </div>
+            <div id="UIproject" class="projectEntry">
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Resume -->
+    <section id="resumeSection" class="portfolioSection gradientBG">
+        <h1 class="sectionHead1"> Resume </h1>
+        <div id="resumeBlock">
+            <iframe src="Media/Resume2026.pdf" title="User Resume"></iframe>
+        </div>
+    </section>
+</body>
+</html>
